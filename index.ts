@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const position = (document.getElementById('position')! as HTMLInputElement).value;
             const Description = (document.getElementById('experienceDesc')! as HTMLTextAreaElement).value;
             const skills = (document.getElementById('skills')! as HTMLInputElement).value.split(',').map(skill => skill.trim());
-            
+
             const resumeHTML = `
             <h1>Resume</h1>
             <div class="card">
@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 </section>
           </div> 
         `;
-
             // Display the resume
             if (resumeDisplay) {
                 resumeDisplay.innerHTML = resumeHTML;

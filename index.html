@@ -9,7 +9,7 @@
 <body>
     <main>
         <form id="resumeForm">
-
+         <section id="personalInfo">
             <h2 >Personal Information</h2>
             <label for="name">Name:</label>
             <input type="text" id="name" required>
@@ -20,6 +20,8 @@
             <label for="email">Email:</label>
             <input type="email" id="email" required>
             <br>
+         </section>
+         <section>
             <h2>Education</h2>
             <label for="school">School/College:</label>
             <input type="text" id="school" required>
@@ -27,6 +29,8 @@
             <label for="degree">Degree:</label>
             <input type="text" id="degree" required>
             <br>
+         </section>
+         <section>
             <h2>Experience</h2>
             <label for="company">Company:</label>
             <input type="text" id="company" required>
@@ -36,14 +40,17 @@
             <br>
             <label for="experienceDesc">Experience Description:</label>
             <textarea id="experienceDesc" required></textarea>
+         </section>
             <br>
+           <section>
             <h2>Skills</h2>
             <label for="skills">Skills (comma-separated):</label>
             <input type="text" id="skills" required>
             <br>
             <button type="submit">Generate Resume</button>
+           </section>
         </form>
-        <div id="resumeDisplay" class="resume-container">
+        <div id="resumeDisplay" class="resume-container"  contenteditable="true">
             <h1>Resume</h1>
         </div>
     </main>
