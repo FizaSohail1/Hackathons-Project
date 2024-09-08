@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 `;
 
-               const downloadLink = document.createElement('a')
+               const downloadLink = document.createElement('a');
                downloadLink.href = 'data:text/html;charset = utf-8,' + encodeURIComponent(resumeHTML)
                downloadLink.textContent = 'Download your resume'
 
